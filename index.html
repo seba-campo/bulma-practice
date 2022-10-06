@@ -9,28 +9,48 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
 <body>
-    <section class="navbar is-widescreen">
-            <figure class="image is-48x48">
-                <img class="is-rounded navbar-brand" src="https://bulma.io/images/placeholders/128x128.png">
-            </figure>
-            <div class="navbar-end">
-                <a href="" class="button is-primary">
-                    <strong>Ingresar</strong>
-                </a>
+    <section class="navbar px-2 py-3">
+        <div class="columns is-mobile">
+            <div class="column">
+                <div class="navbar-brand is-justify-content-space-between">
+                    <figure class="image is-32x32">
+                        <img src="https://bulma.io/images/placeholders/128x128.png" class="is-rounded" alt="">
+                    </figure>
+                </div>
             </div>
+            
+            <div class="column">
+                <div class="navbar-menu is-active">
+                    <div class="navbar-start">
+                        <button class="button is-success">Ingresar</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </section>
 
-    <section class="content">
-        <div class="content__heading">
-            <h2>Escribinos</h2>
+    <section class="is-justify-content-center px-3">
+        <div class="content is-large my-6">
+            <h2 >Escribinos</h2>
             <p>Dejanos tu mensaje y te responderemos pronto.</p>
         </div>
-        <form class="form" action="">
-            <label for="nombre" class="label">Nombre</label>
-            <input type="text" name="nombre" class="input">
+
+        <form class="form" action="#">
+
+            <div class="field">
+                <div class="control is-large">
+                    <label for="nombre" class="label">Nombre</label>
+                    <input type="text" name="nombre" class="input">
+                </div>
+            </div>
             
-            <label for="mensaje" class="label">Mensaje</label>
-            <textarea name="mensaje" id="" cols="30" rows="10" class="textaera"></textarea>
+            <div class="field">
+                <div class="control is-large">
+                    <label for="mensaje" class="label">Mensaje</label>
+                    <textarea name="mensaje" id="" cols="30" rows="10" class="textarea has-fixed-size"></textarea>
+                </div>
+            </div>
 
             <div class="field is-grouped">
                 <div class="control">
